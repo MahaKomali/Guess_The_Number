@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.entry-page {
+    text-align: center;
+    font-style: italic;
+    background: #f68d8d;
+}
+
+
+.container {
+    text-align: center;
+    background: #f1e6e6;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.image-container {
+    position: relative;
+    max-width: 50%; /* Adjust maximum width of the image container */
+    margin: 0 auto; /* Center align the image container */
+}
+
+.home-image {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 10px; /* Optional: Rounded corners for image */
+    max-width: 100%; /* Adjust the displayed size of the image */
+}
+
+.start-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+.game-container {
+    margin: 1em 0;
+    text-align: center;
+}
+
+
+.emoji-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.emoji-image {
+    width: 180px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adjust spacing between emojis */
+}
+
+.emoji-image:first-child {
+    float: left; /* Float the first emoji image to the left */
+}
+
+.emoji-image:last-child {
+    float: right; /* Float the second emoji image to the right */
+}
+
+
+
+
+.game-controls {
+    margin-top: 20px;
+}
+
+.guess-input {
+    padding: 10px; /* Increase padding to increase input box size */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px; /* Adjust width as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#feedback {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#attempts {
+    margin-top: 0.5em;
+    color: #555;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the modal content horizontally */
+    align-items: center; /* Center the modal content vertically */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Limit the width of the modal */
+    text-align: center;
+    border-radius: 10px;
+    animation: popup 0.5s;
+}
+
+@keyframes popup {
+    from {transform: scale(0.1);}
+    to {transform: scale(1);}
+}
+
+.congrats-image {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 10px; /* Optional: Rounded corners for image */
+}
+
+#result-feedback {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
