@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Entry Page -->
+    <div id="entry-page" class="entry-page">
+        <div class="container">
+            <h1>Welcome to the Game World!!</h1>
+            <div class="image-container">
+                <img src="images/Pink Guess The Word Quiz Instagram Post.png" alt="GUESS THE NUMBER" class="home-image">
+                <button onclick="startGame()" class="start-button">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" class="container" style="display:none;">
+        
+        <div class="game-container">
+            <img src="images/emoji2.png" alt="Emoji 2" class="emoji-image">
+            <h1>Welcome to the Guessing Game!</h1>
+            
+            <img src="images/emoji.png" alt="Emoji 1" class="emoji-image">
+            <p>I have randomly selected a number between 1 and 100. Try to guess it!</p>
+            <div class="game-controls">
+                <input type="number" id="userGuess" placeholder="Enter your guess" min="1" max="100" class="guess-input">
+                <button onclick="makeGuess()">Guess</button>
+            </div>
+            <p id="feedback"></p>
+            <p id="attempts"></p>
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <img id="congrats-image" src="images/congrats.png" alt="Congratulations" class="congrats-image">
+            <p id="result-feedback"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

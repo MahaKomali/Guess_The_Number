@@ -1,0 +1,3 @@
+[build]
+  publish = "src/main/resources/static" # Directory containing your static files
+  command = "echo 'No build command needed for static files'"
